@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/video.css">
+        <link rel="stylesheet" href="./css/leftNav.css">
+        <link rel="shortcut icon" href="./image/fav.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+            rel="stylesheet">
+        <title>Youtube</title>
+    </head>
+    <body>
+        {{!-- header --}}
+        <div id="header">
+            {{>header}}
+        </div>
+        {{!-- end --}}
+        <div class="container">
+            {{>leftNav}}
+            <div class="right__nav">
+                <div class="content">
+                    <iframe width="760" height="450"
+                        src="https://www.youtube.com/embed/{{id}}/8bXSbtsIKkfToQu7VpsofzUuPYc"
+                        title="YouTube video player" frameborder="10"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media;gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="related__search">
+                    {{#each data}}
+                    <form
+                        action="{{this.id.videoId}}"
+                        id="form__video__box" method="GET">
+                        <button class="image__video">
+                            <img src={{this.snippet.thumbnails.medium.url}}>
+                        </button>
+                        <div class="title__video">
+                            <p>{{this.snippet.title}}</p>
+                            <p class="time">{{this.snippet.publishedAt}}</p>
+                        </div>
+                    </form>
+{{/each}}
+                </div>
+            </div>
+        </div>
+
+        {{!-- start other work from here --}}
+    </body>
+</html>

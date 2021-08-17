@@ -1,0 +1,10 @@
+.right__nav {
+}
+#reload {
+  width: 20%;
+  margin: 30px auto;
+  height: 2.1em;
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+}

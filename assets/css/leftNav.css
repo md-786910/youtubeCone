@@ -1,0 +1,51 @@
+.left__nav {
+  cursor: pointer;
+  width: 20%;
+}
+.left__nav ul {
+  position: relative;
+  top: 15%;
+  /* height: 80vh; */
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: center;
+}
+.left__nav ul li {
+  font-family: "Nunito", sans-serif;
+  height: 7vh;
+  font-size: 10px;
+  font-weight: 400;
+  padding-left: 20px;
+  width: 90%;
+  margin-top: 3px;
+}
+.left__nav ul li span {
+  display: inline-block;
+  font-size: 24px;
+}
+.left__nav__item {
+  font-size: 15px !important;
+  font-weight: 900;
+  padding-left: 10%;
+}
+.icon__items {
+  position: relative;
+  top: 7px !important;
+}
+.left__nav ul li:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.left__nav ul li:first-child {
+  background-color: rgb(201, 199, 199);
+}
+#homeIcon:first-child {
+  font-weight: 800 !important;
+  color: red;
+}
+hr {
+  width: 90%;
+}
