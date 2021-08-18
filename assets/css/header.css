@@ -55,9 +55,10 @@ input {
   /* margin-top: 2%; */
 }
 #btn {
-  border-color: rgb(179, 179, 182);
+  border-color: rgb(222, 222, 226);
   width: 10%;
-  height: 5.3vh !important;
+  outline: none;
+  height: 33px !important;
   position: relative;
   right: 1.8%;
 }

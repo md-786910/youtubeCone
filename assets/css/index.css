@@ -26,9 +26,13 @@
   outline: none;
   margin: 20px;
 }
+.image__video img {
+  width: 94%;
+  object-fit: cover;
+}
 #form__video__box {
   cursor: pointer;
-  margin-left: 63px;
+margin-bottom: -30px;
   width: 25%;
   height: 45vh;
 }
@@ -45,7 +49,7 @@
 .title__video p {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 14px;
 }
 .title__video .time {
   font-weight: 800 !important;
