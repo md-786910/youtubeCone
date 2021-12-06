@@ -16,7 +16,7 @@ let query = "news"
 let key = "AIzaSyC5Y2wKpR34IxoU8MrtT9cxhHCNL_2OjzM"
 key = "AIzaSyB_V-a8U3z4_RwAggUlghvGEAGyzOJe0iI"
 key = "AIzaSyDcr9HdKfLl0mmLeQXO92QrbyQOKC5qjRI"
-
+key = "AIzaSyDYiiaVy0Fid - rDeh0rE3QggD3JCRf6trI"
 // let create array of random no
 let videoArray = ["javascript", "java", "c++", "c", "python", "comedy", "news", "cricket", "song", "cid", "mjo", "window", "game", "sponge", "tennis ", "motu patlu", "chhota bheem", "dablu bablu"]
 
@@ -95,7 +95,7 @@ app.get('/:video', async (req, res) => {
             id: id
         })
     } catch (error) {
-        res.status(404).send(error)
+        res.status(404).render("error")
     }
 })
 
@@ -103,7 +103,7 @@ app.get("/playlist/video", async (req, res) => {
     try {
         res.status(200).render("playlist")
     } catch (error) {
-        res.status(404).send(error)
+        res.status(404).render("error")
     }
 })
 // https://www.googleapis.com/youtube/v3/search

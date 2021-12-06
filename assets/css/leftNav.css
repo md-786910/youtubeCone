@@ -1,6 +1,7 @@
 .left__nav {
   cursor: pointer;
-  width: 20%;
+  width: 5%;
+  transition: all 0.6s ease-in-out;
 }
 .left__nav ul {
   position: relative;
@@ -30,6 +31,7 @@
   font-size: 15px !important;
   font-weight: 900;
   padding-left: 10%;
+  opacity: 0;
 }
 .icon__items {
   position: relative;
@@ -48,4 +50,14 @@
 }
 hr {
   width: 90%;
+}
+
+/* menu btn */
+.add__item__menu__btn {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.add__width__to__left__nav {
+  width: 20%;
+  transition: all 0.6s ease-in-out;
 }

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .three__div {
@@ -14,6 +15,7 @@
 .logo {
   width: 20%;
   height: 10vh;
+  margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +57,7 @@ input {
   /* margin-top: 2%; */
 }
 #btn {
+  cursor: pointer;
   border-color: rgb(222, 222, 226);
   width: 10%;
   outline: none;
@@ -84,3 +87,8 @@ input {
   object-fit: cover;
   object-position: 30% 20%;
 }
+
+/* media query and applied */
+/* @media screen and (max-width: 900px) {
+
+} */

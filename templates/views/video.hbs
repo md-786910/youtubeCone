@@ -25,14 +25,14 @@
         {{!-- end --}}
         <div class="container">
             {{>leftNav}}
-            <div class="right__nav">
+            <div class="right__nav__video">
                 <div class="content">
-                    <iframe width="760" height="450"
+                    <iframe width="900" height="430"
                         src="https://www.youtube.com/embed/{{id}}/8bXSbtsIKkfToQu7VpsofzUuPYc"
                         title="YouTube video player" frameborder="10"
                         allow="accelerometer; autoplay; clipboard-write;
                         encrypted-media;gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen class="iframe" muted autoplay></iframe>
                 </div>
                 <div class="related__search">
                     {{#each data}}
@@ -44,6 +44,7 @@
                         </button>
                         <div class="title__video">
                             <p>{{this.snippet.title}}</p>
+                            <p class="channel__title">{{this.snippet.channelTitle}}</p>
                             <p class="time">{{this.snippet.publishedAt}}</p>
                         </div>
                     </form>
@@ -51,7 +52,6 @@
                 </div>
             </div>
         </div>
-
-        {{!-- start other work from here --}}
+        <script src="./js/client.js"></script>
     </body>
 </html>
